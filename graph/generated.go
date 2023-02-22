@@ -13,7 +13,7 @@ import (
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
-	"github.com/minhkstn/go-graphql-tutorial/graph/model"
+	"github.com/minhkstn/graphql_tutorial/graph/model"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 )
@@ -230,7 +230,7 @@ func (ec *executionContext) field_Mutation_upsertCharacter_args(ctx context.Cont
 	var arg0 model.CharacterInput
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNCharacterInput2githubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacterInput(ctx, tmp)
+		arg0, err = ec.unmarshalNCharacterInput2githubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacterInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -422,7 +422,7 @@ func (ec *executionContext) _Mutation_upsertCharacter(ctx context.Context, field
 	}
 	res := resTmp.(*model.Character)
 	fc.Result = res
-	return ec.marshalNCharacter2ᚖgithubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacter(ctx, field.Selections, res)
+	return ec.marshalNCharacter2ᚖgithubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacter(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_upsertCharacter(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -479,7 +479,7 @@ func (ec *executionContext) _Query_character(ctx context.Context, field graphql.
 	}
 	res := resTmp.(*model.Character)
 	fc.Result = res
-	return ec.marshalOCharacter2ᚖgithubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacter(ctx, field.Selections, res)
+	return ec.marshalOCharacter2ᚖgithubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacter(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_character(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -536,7 +536,7 @@ func (ec *executionContext) _Query_pogues(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.([]*model.Character)
 	fc.Result = res
-	return ec.marshalOCharacter2ᚕᚖgithubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacter(ctx, field.Selections, res)
+	return ec.marshalOCharacter2ᚕᚖgithubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacter(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_pogues(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -582,7 +582,7 @@ func (ec *executionContext) _Query_kooks(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.([]*model.Character)
 	fc.Result = res
-	return ec.marshalOCharacter2ᚕᚖgithubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacter(ctx, field.Selections, res)
+	return ec.marshalOCharacter2ᚕᚖgithubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacter(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_kooks(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3046,11 +3046,11 @@ func (ec *executionContext) marshalNBoolean2bool(ctx context.Context, sel ast.Se
 	return res
 }
 
-func (ec *executionContext) marshalNCharacter2githubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacter(ctx context.Context, sel ast.SelectionSet, v model.Character) graphql.Marshaler {
+func (ec *executionContext) marshalNCharacter2githubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacter(ctx context.Context, sel ast.SelectionSet, v model.Character) graphql.Marshaler {
 	return ec._Character(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNCharacter2ᚖgithubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacter(ctx context.Context, sel ast.SelectionSet, v *model.Character) graphql.Marshaler {
+func (ec *executionContext) marshalNCharacter2ᚖgithubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacter(ctx context.Context, sel ast.SelectionSet, v *model.Character) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -3060,7 +3060,7 @@ func (ec *executionContext) marshalNCharacter2ᚖgithubᚗcomᚋminhkstnᚋgoᚑ
 	return ec._Character(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNCharacterInput2githubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacterInput(ctx context.Context, v interface{}) (model.CharacterInput, error) {
+func (ec *executionContext) unmarshalNCharacterInput2githubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacterInput(ctx context.Context, v interface{}) (model.CharacterInput, error) {
 	res, err := ec.unmarshalInputCharacterInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -3374,7 +3374,7 @@ func (ec *executionContext) marshalOBoolean2ᚖbool(ctx context.Context, sel ast
 	return res
 }
 
-func (ec *executionContext) marshalOCharacter2ᚕᚖgithubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacter(ctx context.Context, sel ast.SelectionSet, v []*model.Character) graphql.Marshaler {
+func (ec *executionContext) marshalOCharacter2ᚕᚖgithubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacter(ctx context.Context, sel ast.SelectionSet, v []*model.Character) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -3401,7 +3401,7 @@ func (ec *executionContext) marshalOCharacter2ᚕᚖgithubᚗcomᚋminhkstnᚋgo
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalOCharacter2ᚖgithubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacter(ctx, sel, v[i])
+			ret[i] = ec.marshalOCharacter2ᚖgithubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacter(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3415,7 +3415,7 @@ func (ec *executionContext) marshalOCharacter2ᚕᚖgithubᚗcomᚋminhkstnᚋgo
 	return ret
 }
 
-func (ec *executionContext) marshalOCharacter2ᚖgithubᚗcomᚋminhkstnᚋgoᚑgraphqlᚑtutorialᚋgraphᚋmodelᚐCharacter(ctx context.Context, sel ast.SelectionSet, v *model.Character) graphql.Marshaler {
+func (ec *executionContext) marshalOCharacter2ᚖgithubᚗcomᚋminhkstnᚋgraphql_tutorialᚋgraphᚋmodelᚐCharacter(ctx context.Context, sel ast.SelectionSet, v *model.Character) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}

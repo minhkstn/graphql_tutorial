@@ -1,4 +1,4 @@
-module github.com/minhkstn/go-graphql-tutorial
+module github.com/minhkstn/graphql_tutorial
 
 go 1.19
 

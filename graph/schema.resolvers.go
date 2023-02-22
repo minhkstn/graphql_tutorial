@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/minhkstn/go-graphql-tutorial/graph/model"
+	"github.com/minhkstn/graphql_tutorial/graph/model"
 )
 
 // UpsertCharacter is the resolver for the upsertCharacter field.

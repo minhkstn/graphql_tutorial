@@ -1,4 +1,4 @@
-# Where are all the schema files located? globs are supported eg  src/**/*.graphqls
+  # Where are all the schema files located? globs are supported eg  src/**/*.graphqls
 schema:
   - graph/*.graphqls
 
@@ -42,7 +42,7 @@ resolver:
 # gqlgen will search for any type names in the schema in these go packages
 # if they match it will use them, otherwise it will generate them.
 autobind:
-#  - "github.com/minhkstn/go-graphql-tutorial/graph/model"
+#  - "github.com/minhkstn/graphql_tutorial/graph/model"
 
 # This section declares type mapping between the GraphQL and go type systems
 #
